@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            /* Updated background properties */
+            background-image: url('hello.jpeg'); /* Replace with your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            color: #333;
+            min-height: 100vh; /* Ensure body covers the entire viewport height */
+            margin: 0;
+            display: flex; /* For sticky footer */
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.7); /* Slightly transparent header */
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+            z-index: 10; /* Ensure header is above other elements */
+        }
+
+        header h1 {
+            margin-bottom: 0.2em; /* Reduced default margin-bottom */
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.1em;
+            margin-bottom: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Use flexbox for horizontal navigation */
+            justify-content: center; /* Center the navigation items */
+        }
+
+        nav ul li {
+            margin: 0 1.5em; /* Increased margin for spacing */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold; /* Make links bold */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add text shadow */
+        }
+
+        nav a:hover {
+            color: #d65108;
+        }
+
+        .hero {
+            color: #fff;
+            text-align: center;
+            padding: 2em 0; /* Reduced padding, will adjust with container */
+            flex: 1; /* Allow hero to take up remaining vertical space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Vertically center content */
+            align-items: center; /* horizontally center */
+
+        }
+
+        .hero-content {
+            background-color: rgba(214, 81, 8, 0.7); /* Semi-transparent background for hero content */
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+            max-width: 80%; /* Limit the width of the container */
+            margin-bottom: 2em;
+        }
+
+        .hero h2 {
+            font-size: 3em; /* Larger heading */
+            margin-bottom: 0.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+        }
+
+        .hero .tagline {
+            font-size: 1.5em; /* Larger tagline */
+            margin-bottom: 1.5em;
+            font-style: italic;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #d65108;
+            color: #fff;
+            padding: 0.8em 1.5em;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease; /* Smooth transition */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .button:hover {
+            background-color: #b14106;
+        }
+
+        footer {
+            background-color: rgba(34, 34, 34, 0.7); /* Slightly transparent footer */
+            color: #eee;
+            text-align: center;
+            padding: 1.5em 0;
+            font-size: 0.9em;
+            margin-top: auto; /* Push footer to the bottom */
+            border-top: 1px solid #444;
+        }
+
+        footer p {
+            margin: 0.5em 0;
+        }
+
+        footer a {
+            color: #d65108;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Amazon Restaurant Kakamega</h1>
+               <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Amazon Restaurant</h2>
+            <p class="tagline">Experience the taste of Kenya, alcohol-free.</p>
+            <a href="menu.html" class="button">View Our Menu</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Amazon Restaurant. All rights reserved.</p>
+        <p>
+            <a href="https://www.example.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> |
+            <a href="https://www.example.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

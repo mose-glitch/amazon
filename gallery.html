@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Amazon Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #gallery {
+            padding: 2em 0;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+
+        #gallery h2 {
+            margin-bottom: 1em;
+            color: #d65108;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-images {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 0 1em;
+            gap: 1em;
+            width: 100%;
+        }
+
+        .gallery-images img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0;
+            scroll-snap-align: start;
+            animation: moveImages 20s linear infinite;
+        }
+
+        @keyframes moveImages {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-1000px);
+            }
+        }
+
+        .gallery-images img:hover {
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .gallery-images {
+                /* overflow-x: scroll; */
+                /* width: 90%; */
+            }
+            .gallery-images img{
+                width: 250px;
+            }
+            #gallery h2{
+                font-size: 2em;
+            }
+        }
+
+        header {
+            background-color: rgba(34, 34, 34, 0.7); /* Slightly transparent header */
+            color: #eee;
+            text-align: center;
+            padding: 1.5em 0;
+            font-size: 0.9em;
+            border-bottom: 1px solid #444;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1.5em;
+        }
+
+        nav ul li a {
+            color: #eee;
+            text-decoration: none;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul li a:hover {
+            color: #d65108;
+        }
+
+        footer {
+            background-color: rgba(34, 34, 34, 0.7); /* Slightly transparent footer */
+            color: #eee;
+            text-align: center;
+            padding: 1.5em 0;
+            font-size: 0.9em;
+            margin-top: 3em;
+            border-top: 1px solid #444;
+        }
+
+        footer p {
+            margin: 0.5em 0;
+        }
+
+        footer a {
+            color: #d65108;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Amazon Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="gallery" class="content-section">
+        <h2>Photo Gallery</h2>
+        <div class="gallery-images">
+            <img src="wwe.jpeg" alt="Dish 1">
+            <img src="re.jpeg" alt="Dish 2">
+            <img src="rg.jpeg" alt="Dish 3">
+            <img src="y.jpeg" alt="Dish 4">
+            <img src="cf.jpeg" alt="Dish 5">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Amazon Restaurant. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

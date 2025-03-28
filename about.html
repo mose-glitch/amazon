@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Amazon Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: rgba(34, 34, 34, 0.7);
+            color: #eee;
+            text-align: center;
+            padding: 1.5em 0;
+            font-size: 0.9em;
+            border-bottom: 1px solid #444;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            letter-spacing: 0.05em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 0.5em;
+        }
+
+        nav ul li {
+            margin: 0 1.5em;
+        }
+
+        nav ul li a {
+            color: #eee;
+            text-decoration: none;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            transition: color 0.3s ease, transform 0.2s ease;
+            font-size: 1.1em;
+        }
+
+        nav ul li a:hover {
+            color: #d65108;
+            transform: translateY(-2px);
+        }
+
+        #about {
+            padding: 4em 2em;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 3em;
+            margin-bottom: 1em;
+            color: #d65108;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            letter-spacing: 0.05em;
+            text-align: center;
+        }
+
+        #about p {
+            font-size: 1.2em;
+            line-height: 1.9;
+            color: #fff;
+            margin-bottom: 1.5em;
+            text-align: center;
+        }
+
+        footer {
+            background-color: rgba(34, 34, 34, 0.7);
+            color: #eee;
+            text-align: center;
+            padding: 1.5em 0;
+            font-size: 0.9em;
+            margin-top: auto;
+            border-top: 1px solid #444;
+        }
+
+        footer p {
+            margin: 0.5em 0;
+        }
+
+        footer a {
+            color: #d65108;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            #about {
+                padding: 2em 1em;
+            }
+
+            #about h2 {
+                font-size: 2.5em;
+            }
+
+            #about p {
+                font-size: 1.1em;
+                line-height: 1.8;
+            }
+
+            nav ul li {
+                margin: 0 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Amazon Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="content-section">
+        <h2>About Amazon Restaurant</h2>
+        <p>
+            Welcome to Amazon Restaurant, a culinary gem in the heart of Kakamega, where we celebrate the rich flavors of Kenyan cuisine. Our journey began with a passion for sharing the authentic tastes of our heritage with the community.
+        </p>
+        <p>
+            At Amazon, we are committed to providing an alcohol-free dining experience, ensuring that everyone can enjoy our delicious food in a comfortable and welcoming atmosphere. Our menu features a variety of traditional dishes, prepared with fresh, locally sourced ingredients, and a touch of modern flair.
+        </p>
+        <p>
+            Our team is made up of dedicated individuals who are passionate about food and hospitality. From our experienced chefs to our friendly serving staff, we work together to create a memorable dining experience for each and every guest. We believe in creating a warm and inviting space where families and friends can gather to enjoy good food and good company.
+        </p>
+        <p>
+            We are more than just a restaurant; we are a part of the Kakamega community. We strive to support local farmers and businesses, and we are committed to sustainable practices that respect our environment.
+        </p>
+        <p>
+            Thank you for choosing Amazon Restaurant. We look forward to serving you and sharing our love for Kenyan cuisine.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Amazon Restaurant. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

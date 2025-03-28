@@ -1,0 +1,99 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    background-image: url('hello.jpeg'); /* <=====  PUT YOUR IMAGE URL HERE  ====== */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #333;
+}
+
+header {
+    background-color: transparent;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    color: #fff;
+    text-align: center;
+    padding: 5em 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero .tagline {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.button {
+    display: inline-block;
+    background-color: #d65108;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.content-section {
+    padding: 2em;
+    background-color: transparent;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+.content-section h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #d65108;
+}
+
+.menu-items {
+    /* Style your menu items here */
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-images img {
+    width: 300px;
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Amazon Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .menu-section {
+            margin-bottom: 3em;
+        }
+
+        .menu-section h3 {
+            font-size: 2.2em;
+            margin-bottom: 1.2em;
+            color: #f5c518;  /* Changed to yellow */
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            letter-spacing: 0.05em;
+            transition: color 0.3s ease; /* Added transition for color change on hover */
+        }
+
+        .menu-section h3:hover {
+            color: #b8860b; /* Darker yellow on hover */
+        }
+
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5em;
+            padding: 0 2em;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-8px) scale(1.04);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            transition: height 0.3s ease;
+        }
+
+        .menu-item img:hover {
+            height: 260px;
+        }
+
+        .menu-item-details {
+            padding: 2em;
+        }
+
+        .menu-item-name {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 0.8em;
+            color: #222;
+            letter-spacing: 0.03em;
+            position: relative; /* Added for absolute positioning of the line */
+        }
+
+        .menu-item-name::after {
+            content: '';  /* Empty content, the line is created with borders */
+            position: absolute;
+            left: 0;
+            bottom: -0.5em; /* Adjust to position the line below the text */
+            width: 100%;
+            height: 0.15em; /* Thickness of the line */
+            background-color: #8b4513; /* A different color for the line */
+            transform: scaleX(0);  /* Initially hidden */
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+
+        .menu-item-name:hover::after {
+            transform: scaleX(1); /* Show the line on hover */
+        }
+
+        .menu-item-price {
+            font-style: italic;
+            color: #d65108;
+            margin-bottom: 1em;
+            font-size: 1.1em;
+        }
+
+        .menu-item-description {
+            color: #444;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(34, 34, 34, 0.7);
+            color: #eee;
+            text-align: center;
+            padding: 1.5em 0;
+            font-size: 0.9em;
+            border-bottom: 1px solid #444;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1.5em;
+        }
+
+        nav ul li a {
+            color: #eee;
+            text-decoration: none;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul li a:hover {
+            color: #d65108;
+        }
+
+        footer {
+            background-color: rgba(34, 34, 34, 0.7);
+            color: #eee;
+            text-align: center;
+            padding: 1.5em 0;
+            font-size: 0.9em;
+            margin-top: 3em;
+            border-top: 1px solid #444;
+        }
+
+        footer p {
+            margin: 0.5em 0;
+        }
+
+        footer a {
+            color: #d65108;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .menu-items {
+                grid-template-columns: 1fr;
+            }
+            .menu-section h3{
+                font-size: 1.8em;
+            }
+            .menu-item img{
+                height: 200px;
+            }
+            .menu-item img:hover{
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Amazon Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu" class="content-section">
+        <h2>Our Delicious Menu</h2>
+        <p>Experience the authentic taste of Kakamega with our carefully curated dishes.</p>
+
+        <div class="menu-section">
+            <h3>Main Courses</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="samaki.jpeg" alt="Ugali na Samaki">
+                    <div class="menu-item-details">
+                        <div class="menu-item-name">Ugali Fish</div>
+                        <div class="menu-item-price">Ksh 450</div>
+                        <div class="menu-item-description">A Kenyan staple - maize flour cooked to a firm consistency, served with fish stew.</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="beef.jpeg" alt="Chicken Pilau">
+                    <div class="menu-item-details">
+                        <div class="menu-item-name">Ugali beef</div>
+                        <div class="menu-item-price">Ksh 300</div>
+                        <div class="menu-item-description">A kenyan staple - maize flour cooked to a firm consistency, served with beef stew.</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="matoke.jpeg" alt="Matoke">
+                    <div class="menu-item-details">
+                        <div class="menu-item-name">Matoke</div>
+                        <div class="menu-item-price">Ksh 400</div>
+                        <div class="menu-item-description">Steamed or boiled green bananas, often cooked with meat or beans.</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="cf.jpeg" alt="Ingokho na Chapati">
+                    <div class="menu-item-details">
+                        <div class="menu-item-name">Ingokho na Chapati</div>
+                        <div class="menu-item-price">Ksh 550</div>
+                        <div class="menu-item-description">Chicken stew served with soft, unleavened flatbread. A Luhya delicacy.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h3>Vegetarian Options</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/sukuma_wiki_ugali.jpg" alt="Sukuma Wiki na Ugali">
+                    <div class="menu-item-details">
+                        <div class="menu-item-name">Sukuma Wiki na Ugali</div>
+                        <div class="menu-item-price">Ksh 300</div>
+                        <div class="menu-item-description">Sautéed collard greens served with ugali.</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="githeri.jpeg" alt="Githeri">
+                    <div class="menu-item-details">
+                        <div class="menu-item-name">Githeri</div>
+                        <div class="menu-item-price">Ksh 350</div>
+                        <div class="menu-item-description">A hearty stew of beans and maize.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h3>Beverages</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="chai.jpeg" alt="Chai">
+                    <div class="menu-item-details">
+                        <div class="menu-item-name">Chai</div>
+                        <div class="menu-item-price">Ksh 80</div>
+                        <div class="menu-item-description">Tea, a Kenyan favorite.</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="juice.jpeg" alt="Fresh Juice">
+                    <div class="menu-item-details">
+                        <div class="menu-item-name">Fresh Juice</div>
+                        <div class="menu-item-price">Ksh 150</div>
+                        <div class="menu-item-description">Seasonal fruit juices.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Amazon Restaurant. All rights reserved.</p>
+        <p>
+            <a href="https://www.example.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> |
+            <a href="https://www.example.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

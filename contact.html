@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Amazon Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgba(34, 34, 34, 0.7);
+            color: #eee;
+            text-align: center;
+            padding: 1.5em 0;
+            font-size: 0.9em;
+            border-bottom: 1px solid #444;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1.5em;
+        }
+
+        nav ul li a {
+            color: #eee;
+            text-decoration: none;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul li a:hover {
+            color: #d65108;
+        }
+
+        #contact {
+            padding: 2em;
+            background-color: #fff;
+            margin-bottom: 1em;
+            border-bottom: 1px solid #ddd;
+            flex-grow: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #contact h2 {
+            text-align: center;
+            margin-bottom: 1em;
+            color: #d65108;
+            font-size: 2.5em;
+        }
+
+        #contact p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        footer {
+            background-color: rgba(34, 34, 34, 0.7);
+            color: #eee;
+            text-align: center;
+            padding: 1.5em 0;
+            font-size: 0.9em;
+            margin-top: auto;
+            border-top: 1px solid #444;
+        }
+
+        footer p {
+            margin: 0.5em 0;
+        }
+
+        footer a {
+            color: #d65108;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            #contact {
+                padding: 1em;
+            }
+
+            #contact h2 {
+                font-size: 2em;
+            }
+
+            #contact p {
+                font-size: 1em;
+            }
+
+            nav ul li {
+                margin: 0 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Amazon Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact" class="content-section">
+        <h2>Contact Us</h2>
+        <p>Phone: +254 711592174</p>
+        <p>Email: info@amazonrestaurant.com</p>
+        <p>Address: canon Awori street, Kakamega, Kenya</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Amazon Restaurant. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
